@@ -22,7 +22,7 @@ class WeatherApp extends StatelessWidget {
             BlocProvider.of<WeatherCubit>(context).weatherModel == null
                 ? Colors.blue
                 : BlocProvider.of<WeatherCubit>(context)
-                    .weatherModel
+                    .weatherModel!
                     .getThemeColor(),
       ),
       home: HomePage(),
